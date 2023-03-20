@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap links -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ 
+    
+
+    <title>Simple Text Maker</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="output.html" id="form" >
+            <div class="form-group">
+                <label for="FirstName">
+                    <h2><span>First Name:</span></h2>
+                </label>
+                <input type="text" name="FirstName" id="FirstName" class="form-control" placeholder="First Name" />
+
+            </div>
+
+            <div>
+                <label for="LastName">
+                    <h2><span>Last Name:</span></h2>
+                </label>
+                <input type="text" name="LastName" id="LastName" class="form-control" placeholder="Last Name" />
+            </div>
+
+            <div>
+                <label for="birthDate">
+                    <h2><span>Birthday:</span></h2>
+                </label>
+                <input type="date" name="birthDate" id="birthDate" class="form-control" placeholder="First Name" />
+            </div>
+
+            <div>
+                <label for="district">
+                    <h2><span>District:</span></h2>
+                </label>
+                <input type="text" name="district" id="district" class="form-control" placeholder="District" />
+            </div>
+
+            <div>
+                <label for="state">
+                    <h2><span>State:</span></h2>
+                </label>
+                <input type="text" name="state" id="state" class="form-control" placeholder="State" />
+            </div>
+
+            <div>
+                <label for="hobby">
+                    <h2><span>Hobby:</span></h2>
+                </label>
+                <input type="text" name="hobby" id="hobby" class="form-control" placeholder="Hobby" />
+            </div>
+
+
+            <div>
+                <label for="courseEnrolled">
+                    <h2><span>Course Enrolled:</span></h2>
+                </label>
+                <select name="courseEnrolled" id="courseEnrolled" class="form-control">
+                    <option value="" disabled selected hidden>Select Course</option>
+                    <option value="Javascript">Javascript</option>
+                    <option value="Javascript">React</option>
+                    <option value="Javascript">Solidity</option>
+                </select>
+
+            </div>
+
+
+            <div style="margin-top: 6rem;">
+                <button type="submit" id="submit" class="btn btn-primary" onclick="getData()">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+   <script src="index.js"></script>
+
+</html>
